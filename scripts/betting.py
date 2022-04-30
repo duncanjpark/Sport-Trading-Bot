@@ -20,4 +20,6 @@ Function definitions for operations on the bets.py and portfolio.py classes
     # Parameters: outcome object, stake, portfolio object
 
     
-    
+# Display all events
+        # Returns: void
+        # Parameters: dataframe of events
