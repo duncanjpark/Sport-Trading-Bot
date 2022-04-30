@@ -1,14 +1,9 @@
-# SB-Project
+# SB-Project, an automated Sports Betting/Trading Bot by Duncan Park
+#### Contact: dpark6@nd.edu
 
 
 
-**Sports Betting Project by Duncan Park**
-Contact: dpark6@nd.edu
-
-
-**
-Overall Goal: Create a bot in python that uses data scraped from sports betting website to seek arbitrage, and then places theoritical bets and tracks performance of a portfolio.
-**
+### Overall Goal: Create a bot in python that, using data scraped from sports betting website, calculates and seeks arbitrage, employing this information to place "paper bets" and tracks performance of a portfolio.
 
 Target 1: Be able to display all available odds for any event on sports betting site and calculate implied odds for these odds.
 
@@ -27,6 +22,6 @@ Bonus Target: Using machine learning, create model for one specific type of bet 
 
 
 
-
-Using Bovada for odds, as it does not require an account to view odds and make json requests.
-Cannot actually place bets, as sports betting is illegal for my situation.
+###### Using Bovada for odds, as it does not require an account to view odds and make json requests.
+###### I use "paper bets", meaning simulated and holding no monetary value, like paper trading traditional equities
+###### Cannot actually place bets, as sports betting is illegal for my situation.
