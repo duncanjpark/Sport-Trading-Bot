@@ -19,7 +19,8 @@ End Target: Bot succesfully places bets when finding arbitrage, with stake of wa
 
 Bonus Target: Using machine learning, create model for one specific type of bet for a specific sport. Find a way to implement this model in trading bot, in which the bot finds which bets have low house edge and the model predicts an outcome significant different that the implied odds do.
 
-
+### Current Progress:
+In initial stages, simply planning out organization of scripts and how to best utilize different data structures.
 
 
 ###### Using Bovada for odds, as it does not require an account to view odds and make json requests.
