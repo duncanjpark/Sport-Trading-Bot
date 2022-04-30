@@ -28,6 +28,6 @@
 
 
 
-[^1]: I use "paper bets", meaning simulated and holding no monetary value, like paper trading traditional equities. Cannot actually place bets, as sports betting is illegal for my situation.
+[^1]: I use "paper bets", meaning simulated and holding no monetary value, like paper trading traditional equities. Cannot wager money for legal reasons. 
 
 [^2]: Using Bovada for odds, as it does not require an account to view odds and make json requests.
