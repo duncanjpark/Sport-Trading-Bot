@@ -1,4 +1,4 @@
-# SB-Project, an automated Sports Betting/Trading Bot by Duncan Park
+# An Automated Sports Betting/Trading Bot by Duncan Park
 #### Contact: dpark6@nd.edu
 
 
