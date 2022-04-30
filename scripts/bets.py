@@ -11,6 +11,10 @@ Class definitions for event, displayGroup, market, and outcome
     
     # needs initialization function to take link as argument and fill variables
         # which includes creating displayGroup objects
+        
+    # Display event
+    
+    # Display displayGroups
 
         
     
@@ -21,6 +25,12 @@ Class definitions for event, displayGroup, market, and outcome
     
     # needs initialization function to take json argument and fill variables
         # which includes creating market objects
+        
+    # Display displayGroup
+        
+    # Display markets for a displayGroup:
+        # Returns: void
+        # Parameters: displayGroup
 
 
         
@@ -31,8 +41,12 @@ Class definitions for event, displayGroup, market, and outcome
     
     # needs initialization function to take json argument and fill variables
         # which includes creating outcome objects
+    
+    # Display market
 
-
+    # Display outcomes for a market:
+        # Returns: void
+        # Parameters: market
         
         
 # outcome class
@@ -42,5 +56,9 @@ Class definitions for event, displayGroup, market, and outcome
     
     # needs initialization function to take json argument and fill variables
         # which includes calculating implied odds
+       
+    # display outcomes
+        
+
 
 
