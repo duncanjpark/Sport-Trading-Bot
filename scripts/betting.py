@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 
 Function definitions for operations on the bets.py and portfolio.py classes
