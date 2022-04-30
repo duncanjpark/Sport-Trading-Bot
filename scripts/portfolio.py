@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 
 Class definition for portfolio/account of bets
