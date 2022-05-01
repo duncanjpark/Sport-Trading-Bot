@@ -45,15 +45,17 @@ def display_outcomes(market):
     outcomes = market['outcomes']
 
     print("Market:     " + market['description']
-          + market['period']['description'])
+          + ", " + market['period'])
     impliedTotal = 0
     for outcome in outcomes:
         print("Outcome:     " + outcome['description'])
         print("Odds:     Decimal:  " + outcome['price']['decimal']
               + "  American:  " + outcome['price']['american'])
-        print("Implied Odds:     %4.4f\n" %
+        print("Implied Odds:     %4.4f" %
               implied(outcome))
         impliedTotal += implied(outcome)
+        if outcome['price']['handicap']:
+            print("Handicap: " + outcome['price']['handicap'] + "\n")
     print("Cumulative sum of implied odds:     %4.4f" % impliedTotal)
     print("House Edge:     %4.4f%%\n" % ((impliedTotal - 1)*100))
 

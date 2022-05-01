@@ -10,19 +10,23 @@ import pandas as pd
 events = get_events(league_prompt())
 
 whichE, event = event_prompt(events)
-f_name = str(event['description'][whichE] + '.txt')
-
-f = open(f_name, "w")
 
 
-all_event_outcomes(whichE, event, f)
-
-f.close()
-
-#displayGroups = pd.DataFrame(event['displayGroups'][whichE])
-
-#whichDG, displayGroup = displayGroup_prompt(displayGroups)
-
-#market = market_prompt(displayGroup, whichDG)
-
-#display_outcomes(market)
+while(True):
+    user_in = input(
+        "Choose an option:\n[A]ll house edge odds for this event\n"
+        + "[S]pecific bet details\n")
+    if 's' in user_in.lower():
+        displayGroups = pd.DataFrame(event['displayGroups'][whichE])
+        whichDG, displayGroup = displayGroup_prompt(displayGroups)
+        market = market_prompt(displayGroup, whichDG)
+        display_outcomes(market)
+        break
+    elif 'a' in user_in.lower():
+        f_name = str(event['description'][whichE] + '.txt')
+        f = open(f_name, "w")
+        all_event_outcomes(whichE, event, f)
+        f.close()
+        break
+    else:
+        pass

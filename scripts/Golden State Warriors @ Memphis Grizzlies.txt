@@ -1,27 +1,31 @@
 Market: Moneyline, Game. House Edge:     3.4782%
 Market: Point Spread, Game. House Edge:     4.6954%
 Market: Total, Game. House Edge:     4.7619%
-Market: Moneyline, First Half. House Edge:     4.1408%
+Market: Moneyline, First Half. House Edge:     3.9499%
 Market: Point Spread, First Half. House Edge:     4.6954%
 Market: Total, First Half. House Edge:     4.7619%
 Market: Moneyline, 1st Quarter. House Edge:     6.5218%
 Market: Point Spread, 1st Quarter. House Edge:     4.6954%
 Market: Total, 1st Quarter. House Edge:     4.7619%
 Market: Requested Specials, Game. House Edge:     2938.3452%
+Market: Team Stats- Grizzlies Free Throws made, Game. House Edge:     6.9519%
+Market: Team Stats- Grizzlies Three Pointers made, Game. House Edge:     6.9264%
+Market: Team Stats- Warriors Free Throws made, Game. House Edge:     6.9264%
+Market: Team Stats- Warriors Three Pointers  made, Game. House Edge:     6.9519%
 Market: The First player to make a Free Throw, Game. House Edge:     23.2257%
 Market: The First player to make a Thrree Pointer, Game. House Edge:     23.9940%
 Market: Spread, Game. House Edge:     3313.4331%
-Market: Spread, First Half. House Edge:     860.9046%
+Market: Spread, First Half. House Edge:     699.0277%
 Market: Spread, 1st Quarter. House Edge:     540.0705%
-Market: Total Points O/U, Game. House Edge:     3313.8833%
-Market: Total Points O/U - Golden State Warriors, Game. House Edge:     859.0062%
-Market: Total Points O/U - Memphis Grizzlies, Game. House Edge:     860.1501%
-Market: Total Points O/U, First Half. House Edge:     16.8146%
+Market: Total Points O/U, Game. House Edge:     3314.2780%
+Market: Total Points O/U - Golden State Warriors, Game. House Edge:     860.1501%
+Market: Total Points O/U - Memphis Grizzlies, Game. House Edge:     859.0062%
+Market: Total Points O/U, First Half. House Edge:     859.3501%
 Market: Total Points O/U - Golden State Warriors, First Half. House Edge:     6.9519%
 Market: Total Points O/U - Memphis Grizzlies, First Half. House Edge:     6.9519%
 Market: Total Points O/U, 1st Quarter. House Edge:     539.4679%
-Market: Total Points O/U - Golden State Warriors, 1st Quarter. House Edge:     6.9264%
-Market: Total Points O/U - Memphis Grizzlies, 1st Quarter. House Edge:     6.7751%
+Market: Total Points O/U - Golden State Warriors, 1st Quarter. House Edge:     6.7751%
+Market: Total Points O/U - Memphis Grizzlies, 1st Quarter. House Edge:     6.9264%
 Market: 3-Way Moneyline, Regulation Time. House Edge:     10.9416%
 Market: First Basket / Game Winner Parlay, Game. House Edge:     40.9594%
 Market: Player to score the first point for Grizzlies, Game. House Edge:     12.3810%
@@ -37,10 +41,10 @@ Market: Odd/Even Total Points, Game. House Edge:     4.6954%
 Market: Odd/Even Total Points, First Half. House Edge:     4.6954%
 Market: Will the game go to Overtime?, Regulation Time. House Edge:     6.6802%
 Market: Winning Margin, Game. House Edge:     28.9591%
-Market: Winning Margin, First Half. House Edge:     17.5655%
-Market: Winning Margin, 1st Quarter. House Edge:     22.5971%
+Market: Winning Margin, First Half. House Edge:     17.0604%
+Market: Winning Margin, 1st Quarter. House Edge:     21.4452%
 Market: Highest Scoring Quarter, Game. House Edge:     15.3968%
-Market: Highest scoring half, Regulation Time. House Edge:     11.1328%
+Market: Highest scoring half, Regulation Time. House Edge:     11.7827%
 Market: To Record a Double-Double, Game. House Edge:     66.4296%
 Market: To Record a Triple-Double, Game. House Edge:     -72.1107%
 Market: Top Points Scorer (inc Ties), Game. House Edge:     9.2129%
@@ -66,19 +70,19 @@ Market: Total Rebounds - Ja Morant (MEM) (NBA), Game. House Edge:     6.5218%
 Market: Total Rebounds - Jaren Jackson Jr. (MEM) (NBA), Game. House Edge:     6.9519%
 Market: Total Rebounds - Klay Thompson (GSW) (NBA), Game. House Edge:     6.5116%
 Market: Total Rebounds - Stephen Curry (GSW) (NBA), Game. House Edge:     6.5116%
-Market: Total Assists - Andrew Wiggins (GSW) (NBA), Game. House Edge:     6.9519%
 Market: Total Assists - Desmond Bane (MEM) (NBA), Game. House Edge:     6.5218%
 Market: Total Assists - Dillon Brooks (MEM) (NBA), Game. House Edge:     6.5218%
 Market: Total Assists - Draymond Green (GSW) (NBA), Game. House Edge:     6.7906%
 Market: Total Assists - Ja Morant (MEM) (NBA), Game. House Edge:     6.9519%
 Market: Total Assists - Jaren Jackson Jr. (MEM) (NBA), Game. House Edge:     6.8389%
+Market: Total Assists - Jordan Poole (GSW) (NBA), Game. House Edge:     6.5116%
 Market: Total Assists - Klay Thompson (GSW) (NBA), Game. House Edge:     6.6667%
 Market: Total Assists - Stephen Curry (GSW) (NBA), Game. House Edge:     6.7906%
 Market: Total Points and Assists - Stephen Curry (GSW) (NBA), Game. House Edge:     6.9519%
 Market: Total Rebounds and Assists - Andrew Wiggins (GSW) (NBA), Game. House Edge:     6.9519%
 Market: Total Rebounds and Assists - Desmond Bane (MEM) (NBA), Game. House Edge:     6.5218%
 Market: Total Rebounds and Assists - Dillon Brooks (MEM) (NBA), Game. House Edge:     6.9930%
-Market: Total Rebounds and Assists - Draymond Green (GSW) (NBA), Game. House Edge:     6.9519%
+Market: Total Rebounds and Assists - Draymond Green (GSW) (NBA), Game. House Edge:     6.5218%
 Market: Total Rebounds and Assists - Ja Morant (MEM) (NBA), Game. House Edge:     6.7751%
 Market: Total Rebounds and Assists - Jaren Jackson Jr. (MEM) (NBA), Game. House Edge:     6.7751%
 Market: Total Rebounds and Assists - Jordan Poole (GSW) (NBA), Game. House Edge:     6.9930%
@@ -86,7 +90,7 @@ Market: Total Rebounds and Assists - Klay Thompson (GSW) (NBA), Game. House Edge
 Market: Total Rebounds and Assists - Stephen Curry (GSW) (NBA), Game. House Edge:     6.9519%
 Market: Total Points, Rebounds and Assists - Andrew Wiggins (GSW) (NBA), Game. House Edge:     6.9519%
 Market: Total Points, Rebounds and Assists - Desmond Bane (MEM) (NBA), Game. House Edge:     6.9264%
-Market: Total Points, Rebounds and Assists - Dillon Brooks (MEM) (NBA), Game. House Edge:     6.5218%
+Market: Total Points, Rebounds and Assists - Dillon Brooks (MEM) (NBA), Game. House Edge:     6.9264%
 Market: Total Points, Rebounds and Assists - Draymond Green (GSW) (NBA), Game. House Edge:     6.9264%
 Market: Total Points, Rebounds and Assists - Ja Morant (MEM) (NBA), Game. House Edge:     6.9519%
 Market: Total Points, Rebounds and Assists - Jaren Jackson Jr. (MEM) (NBA), Game. House Edge:     6.5218%
@@ -102,10 +106,10 @@ Market: Total Made 3 Point Shots - Jaren Jackson Jr. (MEM) (NBA), Game. House Ed
 Market: Total Made 3 Point Shots - Jordan Poole (GSW) (NBA), Game. House Edge:     6.5218%
 Market: Total Made 3 Point Shots - Klay Thompson (GSW) (NBA), Game. House Edge:     6.5116%
 Market: Total Made 3 Point Shots - Stephen Curry (GSW) (NBA), Game. House Edge:     6.8389%
-Market: Total Blocks and Steals - Andrew Wiggins (GSW) (NBA), Game. House Edge:     6.5116%
+Market: Total Blocks and Steals - Andrew Wiggins (GSW) (NBA), Game. House Edge:     6.5218%
 Market: Total Blocks and Steals - Desmond Bane (MEM) (NBA), Game. House Edge:     6.9264%
 Market: Total Blocks and Steals - Dillon Brooks (MEM) (NBA), Game. House Edge:     6.5218%
-Market: Total Blocks and Steals - Draymond Green (GSW) (NBA), Game. House Edge:     6.5218%
+Market: Total Blocks and Steals - Draymond Green (GSW) (NBA), Game. House Edge:     6.9264%
 Market: Total Blocks and Steals - Ja Morant (MEM) (NBA), Game. House Edge:     6.9264%
 Market: Total Blocks and Steals - Jaren Jackson Jr. (MEM) (NBA), Game. House Edge:     6.8389%
 Market: Total Blocks and Steals - Jordan Poole (GSW) (NBA), Game. House Edge:     6.6667%
