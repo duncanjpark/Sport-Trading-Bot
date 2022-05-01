@@ -21,7 +21,7 @@ def get_events(league):
     # Returns: dataframe of events with their start times and if they're live
     # Parameters: a league (constant)
     data = requests.get(URLs[league]).json()
-    data = data[0]["events"]
+    data = data[0]["events"][0]
 
     print(data)
 
