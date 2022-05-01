@@ -40,6 +40,7 @@ def display_events(events):
     display(events[['description', 'startTime']])   # display events and time
 
 
+# given a market (Series), displays the outcomes and their implied odds
 def display_outcomes(market):
     print('\n')
     outcomes = market['outcomes']
@@ -60,10 +61,12 @@ def display_outcomes(market):
     print("House Edge:     %4.4f%%\n" % ((impliedTotal - 1)*100))
 
 
+# returns a float
 def implied(outcome):
     return (1 / float(outcome['price']['decimal']))
 
 
+# returns an int
 def get_user_choice(size):
     print()
     num = input("Enter the Index of the element you are interested "
@@ -76,6 +79,7 @@ def get_user_choice(size):
     return user_in
 
 
+# returns a league (string)
 def league_prompt():
     leagues = pd.DataFrame(["NBA", "NFL", "MLB"], columns=['League'])
     display(leagues)
@@ -83,13 +87,18 @@ def league_prompt():
     return leagues['League'][which]
 
 
+# returns an event (DataFrame) and its index in the events DataFrame
+# the returned event DataFrame has 17 columns, including displayGroups
 def event_prompt(events):
     display_events(events)
 
     which = get_user_choice(events.shape[0])
+
     return which, events.iloc[[which]]
 
 
+# returns the index within displayGroups that the returned displayGroup is at
+# returned displayGroup is a DataFrame with 6 columns, including markets
 def displayGroup_prompt(displayGroups):
     print("Offered types of bets for this event:")
     displayGroups_DF = pd.DataFrame(displayGroups['description'])
@@ -99,6 +108,7 @@ def displayGroup_prompt(displayGroups):
     return which, displayGroups.iloc[[which]]
 
 
+# returns a market (Series)
 def market_prompt(displayGroup, which):
     print("\nKind of Bet: " + displayGroup['description'][which])
     markets_DF = pd.DataFrame(displayGroup['markets'][which])
@@ -109,6 +119,7 @@ def market_prompt(displayGroup, which):
     display(markets_DF[['descriptionKey', 'description', 'period', 'status']])
 
     whichM = get_user_choice(markets_DF.shape[0])
+
     return markets_DF.iloc[whichM]
 
 
