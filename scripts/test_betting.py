@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 
-from betting import display_events, get_events, display_outcomes
+from betting import get_events, league_prompt, display_outcomes
+from betting import event_prompt, displayGroup_prompt, market_prompt
+from betting import all_event_outcomes
 from IPython.display import display
 import pandas as pd
 
 
-events = get_events("NBA")
+events = get_events(league_prompt())
 
-print('\n')
+whichE, event = event_prompt(events)
+f_name = str(event['description'][whichE] + '.txt')
 
-display_events(events)
-
-event = events.iloc[[1]]
-
-dispGroups = event['displayGroups'][1]
-
-displayGroup = dispGroups[0]
-markets = displayGroup['markets']
-markets = pd.DataFrame(markets)
-
-market = markets.iloc[[0]]
-
-print('\n\n')
+f = open(f_name, "w")
 
 
-display_outcomes(market)
+all_event_outcomes(whichE, event, f)
+
+f.close()
+
+#displayGroups = pd.DataFrame(event['displayGroups'][whichE])
+
+#whichDG, displayGroup = displayGroup_prompt(displayGroups)
+
+#market = market_prompt(displayGroup, whichDG)
+
+#display_outcomes(market)
