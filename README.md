@@ -4,7 +4,7 @@
 
 
 
-### Overall Goal: Create a bot in python that, using data scraped from sports betting website, calculates and seeks arbitrage, employing this information to place paper bets [^1] and tracks performance of a portfolio.
+### Overall Goal: Create a bot in python that, using data scraped from sports betting website, calculates implied odds and seeks arbitrage, employing this information to place paper bets[^1] and tracks performance of a portfolio.
 
 
 - [ ] Target 1: Be able to display all available odds for any event on sports betting site[^2] and calculate implied odds for these odds.
