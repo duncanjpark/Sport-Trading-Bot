@@ -55,8 +55,9 @@ def display_outcomes(market):
         print("Implied Odds:     %4.4f" %
               implied(outcome))
         impliedTotal += implied(outcome)
-        if outcome['price']['handicap']:
-            print("Handicap: " + outcome['price']['handicap'] + "\n")
+        if 'handicap' in outcome['price'].keys():
+            print("Handicap: " + outcome['price']['handicap'])
+        print()
     print("Cumulative sum of implied odds:     %4.4f" % impliedTotal)
     print("House Edge:     %4.4f%%\n" % ((impliedTotal - 1)*100))
 
