@@ -28,6 +28,6 @@
 
 
 
-[^1]: I use "paper bets", meaning simulated and holding no monetary value, like paper trading traditional equities. Cannot wager money for legal reasons. 
+[^1]: I use "paper bets", meaning simulated bets with no monetary value. Coined from paper trading traditional equities. Cannot wager money for legal reasons. 
 
 [^2]: Using Bovada for odds, as it does not require an account to view odds and make json requests.
