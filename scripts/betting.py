@@ -19,6 +19,27 @@ URLs = {
 }
 
 
+class Market:
+
+    def __init__(self, event, whichDG, whichM, market):
+        self.event = event
+        self.whichDG = whichDG
+        self.whichM = whichM
+        self.market = market
+
+    def update(self):
+        self.event = update_event(self.event)
+        displayGroups = pd.DataFrame(self.event['displayGroups'][0])
+        self.whichDG, displayGroup = displayGroup_prompt(
+            displayGroups, self.whichDG)
+        self.whichM, self.market = market_prompt(
+            self.whichDG, displayGroup, self.whichM)
+
+    def full_update(self):
+        self.update()
+        display_outcomes(self.market)
+
+
 # Function to initialize events for a given league
 def get_events(league):
     # Returns: dataframe of events with their start times and if they're live
@@ -37,7 +58,8 @@ def display_events(events):
     events['startTime'] += -14400000    # adjust to Eastern Timezone
     events['startTime'] = pd.to_datetime(
         events['startTime'], unit='ms', origin='unix')  # convert formatting
-    display(events[['description', 'startTime']])   # display events and time
+    # display events and time
+    display(events[['description', 'startTime', 'live']])
 
 
 # given a market (Series), displays the outcomes and their implied odds
@@ -45,19 +67,11 @@ def display_outcomes(market):
     print('\n')
     outcomes = market['outcomes']
 
-    print("Market:     " + market['description']
+    print("\nMarket:     " + market['description']
           + ", " + market['period'])
     impliedTotal = 0
     for outcome in outcomes:
-        print("Outcome:     " + outcome['description'])
-        print("Odds:     Decimal:  " + outcome['price']['decimal']
-              + "  American:  " + outcome['price']['american'])
-        print("Implied Odds:     %4.4f" %
-              implied(outcome))
-        impliedTotal += implied(outcome)
-        if 'handicap' in outcome['price'].keys():
-            print("Handicap: " + outcome['price']['handicap'])
-        print()
+        impliedTotal += display_outcome(outcome)
     print("Cumulative sum of implied odds:     %4.4f" % impliedTotal)
     print("House Edge:     %4.4f%%\n" % ((impliedTotal - 1)*100))
 
@@ -94,38 +108,47 @@ def event_prompt(events):
     display_events(events)
 
     which = get_user_choice(events.shape[0])
+    event = events.iloc[[which]]
 
-    return which, events.iloc[[which]]
+    return update_event(event, which)
 
 
 # returns the index within displayGroups that the returned displayGroup is at
 # returned displayGroup is a DataFrame with 6 columns, including markets
-def displayGroup_prompt(displayGroups):
-    print("Offered types of bets for this event:")
-    displayGroups_DF = pd.DataFrame(displayGroups['description'])
-    print(displayGroups_DF)
-    which = get_user_choice(displayGroups_DF.shape[0])
+def displayGroup_prompt(displayGroups, choice=-1):
+    if(choice == -1):
+        print("Offered types of bets for this event:")
+        displayGroups_DF = pd.DataFrame(displayGroups['description'])
+        print(displayGroups_DF)
+        which = get_user_choice(displayGroups_DF.shape[0])
+    else:
+        which = choice
 
     return which, displayGroups.iloc[[which]]
 
 
 # returns a market (Series)
-def market_prompt(displayGroup, which):
-    print("\nKind of Bet: " + displayGroup['description'][which])
-    markets_DF = pd.DataFrame(displayGroup['markets'][which])
+def market_prompt(whichDG, displayGroup, choice=-1):
+    markets_DF = pd.DataFrame(displayGroup['markets'][whichDG])
 
     markets_DF['period'] = markets_DF['period'].apply(
         lambda x: x['description'])
 
-    display(markets_DF[['descriptionKey', 'description', 'period', 'status']])
+    if(choice == -1):
+        print("\nKind of Bet: " + displayGroup['description'][whichDG])
 
-    whichM = get_user_choice(markets_DF.shape[0])
+        display(
+            markets_DF[['descriptionKey', 'description', 'period', 'status']])
 
-    return markets_DF.iloc[whichM]
+        which = get_user_choice(markets_DF.shape[0])
+    else:
+        which = choice
+
+    return which, markets_DF.iloc[which]
 
 
-def all_event_outcomes(whichE, event, f):
-    displayGroups = pd.DataFrame(event['displayGroups'][whichE])
+def all_event_outcomes(event, f):
+    displayGroups = pd.DataFrame(event['displayGroups'][0])
     for i in range(displayGroups.shape[0]):
         displayGroup = displayGroups.iloc[[i]]
         markets_DF = pd.DataFrame(displayGroup['markets'][i])
@@ -147,3 +170,23 @@ def house_edge(market):
         impliedTotal += implied(outcome)
 
     return ((impliedTotal - 1)*100)
+
+
+def display_outcome(outcome):
+    print("Outcome:     " + outcome['description'])
+    print("Odds:     Decimal:  " + outcome['price']['decimal']
+          + "  American:  " + outcome['price']['american'])
+    print("Implied Odds:     %4.4f" % implied(outcome))
+    if 'handicap' in outcome['price'].keys():
+        print("Handicap: " + outcome['price']['handicap'])
+    print()
+    return implied(outcome)
+
+
+def update_event(event, whichE=0):
+    data = requests.get(path + event['link'][whichE]).json()
+
+    event = pd.DataFrame(data)
+    event = pd.DataFrame(event['events'][0])
+
+    return event
