@@ -57,11 +57,16 @@ print(results.t_test([1, 0]))
 print(results.f_test(np.identity(2)))
 
 run_predict = results.predict()
+# display(mlb_data['AB'])
+# print(list(filter(lambda p: p is None, mlb_data['AB'])))
+# print(len(run_predict))
+
 
 # Plot regression against actual data
 plt.figure(figsize=(12, 6))
 # scatter plot showing actual data
 plt.plot(mlb_data['AB'], mlb_data['R'], 'o')
+np.reshape(mlb_data['AB'], 361860)
 plt.plot(mlb_data['AB'], run_predict, 'r', linewidth=2)   # regression line
 plt.xlabel('AB')
 plt.ylabel('Runs')
