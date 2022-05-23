@@ -1,0 +1,54 @@
+Market: Moneyline, Game. House Edge:     4.2427%
+Market: Point Spread, Game. House Edge:     4.7619%
+Market: Total, Game. House Edge:     4.7619%
+Market: Moneyline, First Half. House Edge:     4.4643%
+Market: Point Spread, First Half. House Edge:     4.6954%
+Market: Total, First Half. House Edge:     4.7619%
+Market: Moneyline, Second Half. House Edge:     -100.0000%
+Market: Point Spread, Second Half. House Edge:     -100.0000%
+Market: Total, Second Half. House Edge:     -100.0000%
+Market: Moneyline, 1st Quarter. House Edge:     6.3336%
+Market: Point Spread, 1st Quarter. House Edge:     4.6954%
+Market: Total, 1st Quarter. House Edge:     4.7619%
+Market: Moneyline, 2nd Quarter. House Edge:     6.1238%
+Market: Point Spread, 2nd Quarter. House Edge:     4.6954%
+Market: Total, 2nd Quarter. House Edge:     4.6954%
+Market: Point Spread, 3rd Quarter. House Edge:     4.6954%
+Market: Total, 3rd Quarter. House Edge:     4.7619%
+Market: Moneyline, 4th Quarter. House Edge:     6.7906%
+Market: Point Spread, 4th Quarter. House Edge:     4.6954%
+Market: Total, 4th Quarter. House Edge:     4.7619%
+Market: Requested Specials, Game. House Edge:     286.6297%
+Market: Squares Game (Fixed Odds), Game. House Edge:     23.7038%
+Market: Spread, Game. House Edge:     3206.8136%
+Market: Spread, First Half. House Edge:     859.6376%
+Market: Spread, 1st Quarter. House Edge:     539.8788%
+Market: Total Points O/U, Game. House Edge:     3313.1472%
+Market: Total Points O/U - Boston Celtics, Game. House Edge:     6.9519%
+Market: Total Points O/U - Miami Heat, Game. House Edge:     6.7751%
+Market: Total Points O/U, First Half. House Edge:     859.9220%
+Market: Total Points O/U - Boston Celtics, First Half. House Edge:     6.9519%
+Market: Total Points O/U - Miami Heat, First Half. House Edge:     6.9519%
+Market: Total Points O/U, 1st Quarter. House Edge:     539.6258%
+Market: Total Points O/U - Boston Celtics, 1st Quarter. House Edge:     6.9264%
+Market: Total Points O/U - Miami Heat, 1st Quarter. House Edge:     6.9264%
+Market: 3-Way Moneyline, Regulation Time. House Edge:     10.8225%
+Market: First Basket / Game Winner Parlay, Game. House Edge:     37.4570%
+Market: Player to score the first point in the game, Game. House Edge:     25.6360%
+Market: Team to score first in the game, Game. House Edge:     6.4015%
+Market: First team to reach 10 points, Game. House Edge:     6.9930%
+Market: First team to reach 20 points, Game. House Edge:     6.8389%
+Market: First team to reach 30 points, Game. House Edge:     6.6667%
+Market: First team to reach 40 points, Game. House Edge:     6.9519%
+Market: First team to reach 50 points, Game. House Edge:     6.7288%
+Market: Odd/Even Total Points, Game. House Edge:     4.6954%
+Market: Odd/Even Total Points, First Half. House Edge:     4.6954%
+Market: Will the game go to Overtime?, Regulation Time. House Edge:     6.1783%
+Market: Winning Margin, Game. House Edge:     32.5414%
+Market: Winning Margin, First Half. House Edge:     12.3514%
+Market: Winning Margin, 1st Quarter. House Edge:     -23.3584%
+Market: Half Time / Full Time, Game. House Edge:     16.5557%
+Market: Highest Scoring Quarter, Game. House Edge:     13.4050%
+Market: Highest scoring half, Regulation Time. House Edge:     11.1328%
+Market: To Record a Double-Double, Game. House Edge:     92.9852%
+Market: To Record a Triple-Double, Game. House Edge:     -94.0269%

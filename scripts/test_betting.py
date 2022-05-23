@@ -31,7 +31,7 @@ while(True):
                 test_Market.full_update()
             break
         elif 'a' in user_in.lower():
-            f_name = str(event['description'][0] + '.txt')
+            f_name = str('../results/' + event['description'][0] + '.txt')
             f = open(f_name, "w")
             all_event_outcomes(event, f)
             f.close()
