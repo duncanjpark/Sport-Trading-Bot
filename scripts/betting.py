@@ -190,3 +190,30 @@ def update_event(event, whichE=0):
     event = pd.DataFrame(event['events'][0])
 
     return event
+
+
+def get_score(id):
+    data = requests.get(
+        "https://services.bovada.lv/services/sports/results/api/v2/scores/" + str(id)).json()
+
+    return (data[0]['latestScore'])
+
+
+def score_change(score, id):
+    init = score_diff(score)
+    display(score)
+    final = (score_diff(get_score(id)))
+    display(score)
+    return final - init
+
+
+def score_diff(score):
+    return int(score['home']) - int(score['visitor'])
+
+
+def ML_change(market):
+    init = implied(market.market['outcomes'][0])
+    market.update()
+    final = implied(market.market['outcomes'][0])
+    display_outcome(market.market['outcomes'][0])
+    return (final - init) / init
